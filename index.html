@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Hot or Cold</title>
+		<meta charset="utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Pacifico|Satisfy' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	</head>
+	<body>
+		<div id="header">
+		<div  id="myGuess" >
+
+			<h1>Sponge Bob Huckle Buckle</h1>
+
+			<p id="instruction">Hi I'm spongebob and I'd like you to guess my random number. I'd pick, and you'd guess a value from 0-100, the closer you get the larger your percentage...<br><span class="haveFun">Have fun !!!</span></p>
+
+			<div id="options"></div> 
+			<p id="startPlay"></p>
+			<center>
+				<form id="guessForm">
+					<label for="guess">Your Guess</label><br>
+					<input type="text" id="guess" placeholder="Enter your guess"><br>
+					<input type="submit" id="confirm" class="sendIn" name="submitGuess" value="Enter">
+					<input type="reset" id="startOver" class="sendIn" name="startOver" value="Restart">
+				
+				</form>
+			</center>
+<!--Response consequent upon user input-->
+
+			<div id="status" class="cold hot"></div>
+			<div class="curve" id="guessProgress">
+				<div id="meter"></div>
+			</div>
+		<br>
+		</div>
+	
+	</div>	
+		<script src="javascript/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="javascript/script.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>

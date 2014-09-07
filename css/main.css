@@ -1,0 +1,229 @@
+/**************************************
+			General Styling
+***************************************/
+body{
+background:url('../img/SpongeBob.png') top right no-repeat #feed69;
+font-family: 'Playball', cursive;
+font-size: 1em;
+font-weight: bold;
+}
+
+p {
+	text-align: center;
+}
+
+/*position image*/
+#guessImg{
+	float: right;
+	width: 45%;
+	height:50%;
+
+}
+
+/*Styling my Guess play area*/
+#myGuess {
+/*	background-color: #feed69;*/
+/*	background-color: #879131;*/
+	background-color: #995f2d;
+	height: auto;
+	float: left;
+	width: 35%;
+	margin:5%;
+	border-radius: 10px;
+	opacity: 0.75;
+	padding: 20px 0 30px 30px;
+	box-shadow: 10px 10px 15px 5px #222;
+}
+
+/*geass Area header*/
+#myGuess h1{
+
+	font-family: 'Pacifico', cursive;
+	font-style: 2.5em;
+/*	border-bottom: 1px solid red;*/
+}
+
+
+/*my guess page form elements*/
+#guessForm form{
+	width: 40%;
+	margin: 0 auto;
+	font-family: 'Satisfy', cursive;
+
+}
+
+#instruction{
+	padding-right: 20px
+}
+
+/*instruction paragraph*/
+#myGuess p{
+/*	width: 70%;*/
+	text-align:justify;
+	font-family: 'Satisfy', cursive;
+	line-height: 1.5em;
+	font-size: 1.5em
+}
+
+p.haveFun{
+/*	width: 100%;*/
+	color: #feed69;
+	font-weight: bold;
+/*	text-align: center;*/
+	margin: 0 auto;
+}
+
+p#startPlay {
+		text-align: center;
+		width: 40%;
+		margin: 0 auto;
+/*		border:none;*/
+
+}
+
+button#start {
+	width: 100%;
+	height: 50px;
+	border:none;
+	background-color: #cfdde0;
+	font-size: .8em;
+	font-family: 'Playball', cursive;
+
+}
+button#start:hover{
+	background-color: #feed69;
+	color:#582e22;
+	border:1px solid #9e622e;
+
+}
+
+/*Hot or cold options*/
+#options{
+	padding-right: 20px;
+}
+
+
+#options p{
+/*	color:#fff;
+*/	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+/*	color: #879131;*/
+}
+
+.cold{
+	color: #44c7f5;
+}
+.hot {
+	color: red;
+}
+
+.sendIn{
+	border:none;
+	height: 30px;
+	background-color: #c6d9e0;
+	margin-top: 20px;
+}
+
+.sendIn:hover {
+
+	background-color: #feed69;
+	border:1px solid #879131;
+	}
+
+input [type="text"]{
+	margin-bottom: 10px;
+}
+
+/***************************************
+	PROGRESS MEASUREMENT
+***************************************/
+#guessProgress {
+        width: 80%;
+        height: 20px;
+        border: 1px solid #fff26d;
+        background-color: #fff;
+        margin: 0 auto;
+        border-radius:25px; 
+/*        margin-left: 15%;*/
+}
+ 
+#guessProgress div {
+        height: 100%;
+        color: #fff;
+        text-align: right;
+        line-height: 27px;
+        width: 0;
+       
+}
+
+.meter_cold {
+	 background-color: #9ec9d9;
+}
+
+.meter_hot {
+	 background-color: red;
+}
+
+#status {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/*.cold {
+	color: green;
+	margin-left: 20%;
+	font-size: 32px;
+}
+
+.hot {
+	color: purple;
+	margin-left: 20%;
+	font-size: 32px;
+}
+*/
+.curve {
+	border-radius: 10px;
+	background: #e6e5e2;	
+	box-shadow: 0 -1px 1px #c0bfbc inset;
+	
+}
+
+.curve div {
+	border-radius: 9px;
+	box-shadow: 0 2px 2px #333;
+
+}
+
+@media screen and (max-width:480px){
+
+body{
+	font-size: 0.7em;
+/*	background:url('../img/SpongeBob.png') top right no-repeat #feed69;*/
+}
+
+	#myGuess{	
+		width:100%;
+		padding: 0;
+		margin: 1%;
+/*		height: 70%;*/
+}
+#instruction{
+	padding-left: 10px;
+}
+}
+
+@media screen and (min-width:481px) and (max-width:950px){
+
+
+	#myGuess{	
+		width:80%;
+		padding: 0;
+		margin:auto;
+/*		height: 70%;*/
+}
+
+#instruction{
+	padding: 10px;
+}
+	}
